@@ -1,1 +1,5 @@
-# note: call scripts from /scripts
+build:
+	go build -o build/consistency cmd/consistency.go
+
+run:
+	go run cmd/consistency.go
