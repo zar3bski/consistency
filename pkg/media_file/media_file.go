@@ -19,6 +19,7 @@ func NewMediaFile(path string) MediaFile {
 	if err != nil {
 		log.Fatalf("File %s could not be analyzed: %v\n", path, err)
 	}
+	// get the size
 	return MediaFile{Name: fi.Name(), Path: path, FileExtension: extension, Size: fi.Size()}
 }
 
